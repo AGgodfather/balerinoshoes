@@ -1,0 +1,221 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #3b3b3b;
+    background-color: #f9ede3;
+}
+
+header {
+    background: url('images/hero-shoe-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #6b4f4f;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    color: #f1a661;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1a661;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffbaba;
+    transition: transform 0.5s, color 0.5s;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 22px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.5s, color 0.5s;
+    color: #ffe8d6;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #f1a661;
+    color: #6b4f4f;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffbaba;
+    transform: scale(1.1);
+    color: #6b4f4f;
+}
+
+.hero:hover h1, .hero:hover p {
+    transform: perspective(1000px) rotateY(20deg);
+    color: #f1a661;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffe8d6;
+}
+
+.features-container, .pricing-table, .testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature, .pricing-option, .testimonial {
+    flex: 1;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.4s ease, transform 0.6s ease;
+    background-color: #fae1dd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature img, .pricing-option img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.6s ease;
+}
+
+.feature h3, .pricing-option h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffbaba;
+}
+
+.feature:hover, .pricing-option:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) rotateX(15deg);
+}
+
+.feature:hover img, .pricing-option:hover img {
+    transform: scale(1.2) rotateY(15deg);
+}
+
+.pricing-table .pricing-option.popular-plan {
+    background-color: #f1a661;
+    color: #6b4f4f;
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    background-color: #ffbaba;
+}
+
+.testimonial:hover {
+    transform: perspective(1000px) rotateY(15deg) rotateX(-5deg);
+    background-color: #fae1dd;
+}
+
+footer {
+    padding: 40px 20px;
+    background-color: #6b4f4f;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.social-media a:hover img {
+    transform: scale(1.3) rotate(20deg);
+    filter: brightness(1.2);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1a661;
+    color: #6b4f4f;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    display: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+.back-to-top:hover {
+    transform: scale(1.3);
+    background-color: #ffbaba;
+}

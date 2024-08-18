@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balerion-EVERYTHING YOU NEED?</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">Balerion</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Step Up Your Game with Balerion</h1>
+            <p>Experience the perfect blend of style and comfort</p>
+            <a href="#pricing" class="cta-button">Shop Now</a>
+        </div>
+    </header>
+    
+    <section id="features">
+        <h2>Why Choose Balerion?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="images/nike_air_max.jpg" alt="Nike Air Max">
+                <h3>Unmatched Comfort</h3>
+                <p>Designed for all-day wear without compromising style.</p>
+            </div>
+            <div class="feature">
+                <img src="images/nike_air_force.jpg" alt="Nike Air Force">
+                <h3>Long-lasting Durability</h3>
+                <p>Crafted with premium materials for extended use.</p>
+            </div>
+            <div class="feature">
+                <img src="images/nike_air_jordan.jpg" alt="Nike Air Jordan">
+                <h3>Trendsetting Style</h3>
+                <p>Stay ahead of the curve with the latest fashion trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Find Your Perfect Pair</h2>
+        <div class="pricing-table">
+            <div class="pricing-option">
+                <img src="images/nike_revolution.jpg" alt="Nike Revolution">
+                <h3>Basic Sneakers</h3>
+                <p>Rs 2599</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+            <div class="pricing-option popular-plan">
+                <img src="images/nike_zoom.jpg" alt="Nike Zoom">
+                <h3>Performance Shoes</h3>
+                <p>Rs 3799</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+            <div class="pricing-option">
+                <img src="images/nike_vapormax.jpg" alt="Nike Vapormax">
+                <h3>Luxury Edition</h3>
+                <p>Rs 4699</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>What Our Customers Are Saying</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The most comfortable shoes I've ever worn! Damn these are worthhhhhhh it"</p>
+                <h4>-MALAVIKA</h4>
+            </div>
+            <div class="testimonial">
+                <p>"First i was not sure about these shoes , but these really amused and shocked me."</p>
+                <h4>- MAYANK SINGH</h4>
+            </div>
+            <div class="testimonial">
+                <p>"My friend Arinjay had these and recommended me to buy them , now i see why he loved these."</p>
+                <h4>- DEBOSMITA </h4>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="company-info">
+                <p>&copy; 2024 BALERION. All rights reserved.</p>
+                <p>Email: info@balerion.gmail.com</p>
+                <p>Phone: +9100892408</p>
+            </div>
+        </div>
+        <a href="#" class="back-to-top">Back to Top</a>
+    </footer>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
